@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab id="todayData" text="今日数据">
+            <content>
+              <AnchorPane id="sougou" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="29.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="超级话题" />
+                        <Text layoutX="108.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="签到数" />
+                        <Text layoutX="108.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="帖子量" />
+                        <TextField id="chaohua_qiandao" fx:id="chaohua_qiandao" alignment="CENTER" layoutX="186.0" layoutY="52.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="chaohua_tiezi" fx:id="chaohua_tiezi" alignment="CENTER" layoutX="186.0" layoutY="75.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_hudong" fx:id="mingxing_hudong" alignment="CENTER" layoutX="186.0" layoutY="121.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_tiji" fx:id="mingxing_tiji" alignment="CENTER" layoutX="186.0" layoutY="98.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_aimu" fx:id="mingxing_aimu" alignment="CENTER" layoutX="186.0" layoutY="167.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_sousuo" fx:id="mingxing_sousuo" alignment="CENTER" layoutX="186.0" layoutY="144.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="tieba_qiandao" fx:id="tieba_qiandao" alignment="CENTER" layoutX="186.0" layoutY="213.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_zongfen" fx:id="mingxing_zongfen" alignment="CENTER" layoutX="186.0" layoutY="190.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="baidu_songhua" fx:id="baidu_songhua" alignment="CENTER" layoutX="186.0" layoutY="259.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="tieba_tiezi" fx:id="tieba_tiezi" alignment="CENTER" layoutX="186.0" layoutY="236.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="xunyi_qiandao" alignment="CENTER" layoutX="186.0" layoutY="305.0" prefHeight="23.0" prefWidth="91.0" fx:id="xunyi_qiandao" />
+                        <TextField id="vbang_zhishu" fx:id="vbang_zhishu" alignment="CENTER" layoutX="186.0" layoutY="282.0" prefHeight="23.0" prefWidth="91.0" />
+  <!--                  <TextField id="sougou_toupiao" fx:id="sougou_toupiao" alignment="CENTER" layoutX="186.0" layoutY="328.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="sougou_paiming" fx:id="sougou_paiming" alignment="CENTER" layoutX="277.0" layoutY="328.0" prefHeight="23.0" prefWidth="91.0" />
+   -->                  <TextField id="vbang_paiming" fx:id="vbang_paiming" alignment="CENTER" layoutX="277.0" layoutY="282.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="xunyi_paiming" alignment="CENTER" layoutX="277.0" layoutY="305.0" prefHeight="23.0" prefWidth="91.0" fx:id="xunyi_paiming" />
+                        <TextField id="baidu_songhua_paiming" fx:id="baidu_songhua_paiming" alignment="CENTER" layoutX="277.0" layoutY="259.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_zongfen_paiming" fx:id="mingxing_zongfen_paiming" alignment="CENTER" layoutX="277.0" layoutY="190.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="tieba_paiming" fx:id="tieba_paiming" alignment="CENTER" layoutX="277.0" layoutY="213.0" prefHeight="46.0" prefWidth="91.0" />
+                        <TextField id="mingxing_sousuo_paiming" fx:id="mingxing_sousuo_paiming" alignment="CENTER" layoutX="277.0" layoutY="144.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_aimu_paiming" fx:id="mingxing_aimu_paiming" alignment="CENTER" layoutX="277.0" layoutY="167.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_tiji_paiming" fx:id="mingxing_tiji_paiming" alignment="CENTER" layoutX="277.0" layoutY="98.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="mingxing_hudong_paiming" fx:id="mingxing_hudong_paiming" alignment="CENTER" layoutX="277.0" layoutY="121.0" prefHeight="23.0" prefWidth="91.0" />
+                        <TextField id="chaohua_paiming" fx:id="chaohua_paiming" alignment="CENTER" layoutX="277.0" layoutY="52.0" prefHeight="46.0" prefWidth="91.0" />
+                        <Text layoutX="208.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="今日数据" />
+                        <Text layoutX="311.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="排名" />
+                        <Text layoutX="108.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="提及量" />
+                        <Text layoutX="108.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="互动量" />
+                        <Text layoutX="108.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="搜索量" />
+                        <Text layoutX="108.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="爱慕值" />
+                        <Text layoutX="114.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="总分" />
+                        <Text layoutX="23.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="明星势力榜" />
+                        <Text layoutX="108.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="签到数" />
+                        <Text layoutX="108.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="帖子量" />
+                        <Text layoutX="108.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="鲜花数" />
+                        <Text layoutX="96.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="新媒体指数" />
+                        <Text layoutX="96.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="寻艺签到数" />
+                        
+                        <Text layoutX="29.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="百度贴吧" />
+                        <Text layoutX="29.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="百度送花" />
+                        <Text layoutX="43.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V榜" />
+                <!--    <Text layoutX="23.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="搜狗人气榜" />
+                		<Text layoutX="108.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="投票数" />-->
+                        <Button id="getData" layoutX="407.0" layoutY="54.0" mnemonicParsing="false" onAction="#getData" prefHeight="48.0" prefWidth="100.0" text="重新获取" />
+                        <Button id="saveData" layoutX="407.0" layoutY="146.0" mnemonicParsing="false" onAction="#saveData" prefHeight="48.0" prefWidth="100.0" text="保存数据" />
+                        <Button id="exportExcel" layoutX="407.0" layoutY="235.0" mnemonicParsing="false" onAction="#exportExcel" prefHeight="48.0" prefWidth="100.0" text="导出为excel" />
+                        <Hyperlink layoutX="167.0" layoutY="389.0" />
+                        <Text fill="#5b5b5b" layoutX="522.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="保存时请不要留空并确定数据库已开启" wrappingWidth="106.0" />
+                        <Text fill="#686868" layoutX="520.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="导出时最好确保已存在最近三天的数据" wrappingWidth="109.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="一周数据">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="42.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="还没写，要增删改查数据库数据，直接用mysql workbench" wrappingWidth="400.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab id="setting" text="相关设置">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button id="SettingOK" layoutX="419.0" layoutY="413.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0" text="导入配置" />
+                        <Button id="exportSetting" layoutX="516.0" layoutY="413.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="83.0" text="导出配置" />
+                        <Text layoutX="43.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="微博账号" />
+                        <Text layoutX="54.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="导出文件路径（excel，配置文件）" />
+                        <TextField id="savePath" fx:id="savePath" layoutX="113.0" layoutY="365.0" prefHeight="23.0" prefWidth="392.0" />
+                        <Button id="savaPathChooser" layoutX="507.0" layoutY="365.0" mnemonicParsing="false" onAction="#pathOK" text="确定" />
+                        <TableView fx:id="weiboTable" layoutX="125.0" layoutY="31.0" prefHeight="159.0" prefWidth="400.0">
+                          <columns>
+                            <TableColumn fx:id="number" prefWidth="62.0" text="编号" />
+                            <TableColumn fx:id="Weiboname" minWidth="0.0" prefWidth="191.0" text="用户名" />
+                              <TableColumn fx:id="Weibopass" prefWidth="146.0" text="密码" />
+                          </columns>
+                        </TableView>
+                        <TextField id="username" fx:id="username" layoutX="144.0" layoutY="215.0" />
+                        <TextField id="password" fx:id="password" layoutX="362.0" layoutY="215.0" />
+                        <TextField id="weiboNumber" fx:id="weiboNumber" layoutX="145.0" layoutY="249.0" prefHeight="23.0" prefWidth="38.0" />
+                        <Text layoutX="95.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+                        <Text layoutX="327.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+                        <Text layoutX="101.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="编号" />
+                        <Button id="addWeibo" layoutX="544.0" layoutY="215.0" mnemonicParsing="false" onAction="#addWeibo" text="新增" />
+                        <Button id="removeWeibo" layoutX="190.0" layoutY="249.0" mnemonicParsing="false" onAction="#removeWeibo" text="删除" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <TextField id="stateInfo" fx:id="stateInfo" prefHeight="32.0" prefWidth="649.0" text="系统状态：" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

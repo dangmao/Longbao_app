@@ -1,0 +1,16 @@
+#MyEclipse Hibernate Properties
+#Wed May 17 23:10:16 CST 2017
+genVersionTag=false
+genAnnotations=false
+configFile=/Longbao_app/src/hibernate.cfg.xml
+reStrategyClass=
+sessionFactoryId=
+profile=
+detectM2M=false
+genBasicCompId=false
+keyGenerator=
+createConfigFile=true
+basePersistenceClass=
+detectO2O=false
+useJavaTypes=true
+reSettingsFile=
